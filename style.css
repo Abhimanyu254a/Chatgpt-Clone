@@ -3,6 +3,24 @@ html{
 }
 .normal
 {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+}
+.reset
+{
+    float:left;
+}
+.name
+{
+    display:inline-block;
+    margin: 10px 1325px 10px 10px;
 
 }
+.user
+{
+    float:right
+}
+
+
