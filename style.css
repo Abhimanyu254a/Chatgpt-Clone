@@ -23,4 +23,76 @@ html{
     float:right
 }
 
+.middle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
 
+.lower
+{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.middle-middle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1250px;
+    width: 100%;
+
+}
+.Button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.set1, .set2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    
+}
+.set1
+{
+    padding-right: 30px !important;
+}
+.set2
+{
+    padding-left: 20px !important;
+}
+.R1,.R2,.R3,.R4
+{
+    padding: 20px 20px 20px 20px;
+    border: 1px 1px 1px 1px;
+    height: 93.5px;
+    width: 134px;
+
+    background: #1d1f20;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+  
+    &:hover {
+      background: #35383a;
+    }
+  
+    &:active {
+      background: #494d4e;
+    }
+}
+.R1, .R3
+{
+    margin-right : 50px;
+    float:right;
+}
