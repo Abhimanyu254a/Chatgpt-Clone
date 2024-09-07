@@ -1,35 +1,91 @@
 html{
     background-color: #1d1f20 !important;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* ------------------------Upper div---------------------- */
+.top
+{
+    height: 35px;
+}
+.reset
+{
+    padding-left: 75px;
+}
+.name
+{
+    padding-left: 20px;
+    font-size: 24px;
+}
+.new_chat
+{
+    height:60px;
+    width: 60px;
+    background: #1d1f20;
+    border-radius: 49px;
+    cursor: pointer;
+    user-select: none;
+}
+.new_chat:hover
+{
+    filter:brightness(10);
+}
+
 .normal
 {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 20px;
+    
 }
 .reset
 {
     float:left;
+    padding-left: 0px;
 }
 .name
 {
     display:inline-block;
-    margin: 10px 1325px 10px 10px;
+    margin: 10px 1133px 10px 10px;
 
 }
 .user
 {
-    float:right
+    float:right;
+    height: 50px;
+    width: 50px;
+    user-select: none;
+    padding: 5px 5px 5px 5px;
+    border-left-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 115, 210)   ; /* Initial background color */
+    color: rgb(0, 0, 0); /* Initial text color */
+    border-radius: 50%; /* Makes the div round */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 24px; /* Text size */
+    font-weight: bold; /* Text weight */
+
+}
+.user:hover
+{
+    background-color: #2b124c; /* Background color on hover */
+    color: #fbe4d8; /* Text color on hover */
 }
 
-.middle
+
+/* middle div 1*/
+
+.middle_1
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 572px;
 }
 
 .lower
@@ -101,42 +157,68 @@ html{
 {
     height:75px;
 }
-
-.searchBox {
-    position: absolute;
-    width: 240px;
-    
-    background: #2f3640;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-
-}
-
-    .searchBox:hover > .searchInput {
-        width: 240px;
-        padding: 0 6px;
-    }
+/*middle2 div*/
 
 
-.searchButton {
-    color: white;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
+/* lower div */
+.lower
+{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.message-container {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.message-box {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    border-radius: 110px;
+    width: 825px;
+    max-width: 1000px;
+    height: 60px;
+}
+.send
+{
+    border-radius: 50px;
+    padding-right: 10px;
+}
+
+.input-box {
+
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding-right: 20px;
+    padding-left: 30px;
+    flex: 1;
+    outline: none;
 
 }
 
-.searchInput {
-    border:none;
-    background: none;
-    outline:none;
-    float:left;
-    padding: 0;
+.send-button {
+    background-color: #666;
+    border: none;
     color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.disclaimer a {
+    color: #aaa;
+    text-decoration: underline;
 }
